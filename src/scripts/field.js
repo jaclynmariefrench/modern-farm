@@ -15,12 +15,3 @@ export const usePlants = () => {
   return growingField;
 };
 
-// const seeds = {
-// //  add keys and value
-//     type: "Strawberries",
-//     height: 2,
-//     output: 5,
-// }
-
-// add plant
-// addPlant(seeds)
