@@ -1,5 +1,4 @@
-import { usePlants } from "./field.js"
-import { createPlan } from "./plan.js"
+import { addPlant } from "./field.js"
 import {createAsparagus} from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
 import { createPotato } from "./seeds/potato.js"
@@ -7,29 +6,31 @@ import { createSoybean } from "./seeds/soybean.js"
 import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 
-const year = createPlan()
 
-export const plantSeeds = (year) => {
+
+export const plantSeeds = (yearlyPlan) => {
+    let year = ""
+
     for(const row of year) {
         for (const plot of row) {
             if (plot === "Asparagus") {
                 const asparagusSeed = createAsparagus()
-                usePlants(asparagusSeed)
+                addPlant(asparagusSeed)
             } else if (plot === "Corn") {
                 const cornSeed = createCorn()
-                usePlants(cornSeed)
+                addPlant(cornSeed)
             } else if (plot === "Potato") {
                 const potatoSeed = createPotato()
-                usePlants(potatoSeed)
+                addPlant(potatoSeed)
             } else if (plot === "Soybean") {
                 const soybeanSeed = createSoybean()
-                usePlants(soybeanSeed)
+                addPlant(soybeanSeed)
             } else if (plot === "Sunflower") {
                 const sunflowerSeed = createSunflower()
-                usePlants(sunflowerSeed)
+                addPlant(sunflowerSeed)
             } else if (plot === "Wheat") {
                 const wheatSeed = createWheat()
-                usePlants(wheatSeed)
+                addPlant(wheatSeed)
             }
         }
     }
