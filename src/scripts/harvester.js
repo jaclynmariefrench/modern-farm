@@ -1,19 +1,15 @@
-import { plantSeeds } from "./tractor.js";
-
-const seeds = plantSeeds();
-
 export const havestPlants = (seed) => {
-  seeds = [];
+  const plantArray = []
 
-  for (const seed of seeds) {
-      if (seeds.type === "Corn") {
-        const cornPlant = seeds.output/2 
-        cornPlant.push(seeds)
+  for (const seed of plantArray) {
+      if (plant.type === "Corn") {
+        const cornPlant = seed.output/2 
+        cornPlant.push(seed)
       } else {
-        const plants = seeds.output
-        plants.push(seeds)
+        const plants = seed.output
+        plants.push(seed)
       }
   }
-return seeds
+return plantArray
 };
 
