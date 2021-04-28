@@ -1,18 +1,16 @@
-import { usePlants } from "./field.js";
+const havestArray = [];
 
-const plantArray = usePlants()
-
-export const havestPlants = (seed) => {
-
-  for (const seed of plantArray) {
-      if (plant.type === "Corn") {
-        const cornPlant = seed.output/2 
-        cornPlant.push(seed)
-      } else {
-        const plants = seed.output
-        plants.push(seed)
+export const havestPlants = (plantPlanted) => {
+  for (const plant of plantPlanted) {
+    if (plant.type === "Corn") {
+      for (const corn of plantPlanted) {
+        const cornPlant = corn.output / 2;
+        havestArray.push(cornPlant);
       }
+    } else {
+      const plants = plant.output;
+      havestArray.push(plants);
+    }
   }
-return plantArray
+  return plantPlanted;
 };
-

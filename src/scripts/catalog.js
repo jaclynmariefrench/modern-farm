@@ -1,11 +1,9 @@
-import { havestPlants } from "./harvester.js";
 
-export const Catalog = () => {
-  const havestArray = havestPlants();
-  let html = "<div>";
-  for (const harvest of havestArray) {
-    html += `<section class="plant">${havest.type}</section>`;
+export const Catalog = (allPlants) => {
+  let html = "";
+  
+  for (const plant of allPlants) {
+    html += `<section class="plant">${plant.type}</section>`;
   }
-  html += "</div>";
   return html;
 };
