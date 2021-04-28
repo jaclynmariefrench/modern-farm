@@ -1,14 +1,20 @@
 const growingField = [];
 
 export const addPlant = (seed) => {
-     growingField.push(seed);
-     return growingField;
+    if(Array.isArray(seed)) {
+      // Its corn
+     for (const corn of seed) {
+       growingField.push(corn)
+     } 
+    }
+    
+    growingField.push(seed);
     }
   
-let plantCopy = []
+
 
 export const usePlants = () => {
-  plantCopy = growingField.slice()
+ const plantCopy = growingField.slice()
   return plantCopy;
 };
 

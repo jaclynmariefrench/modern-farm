@@ -1,5 +1,8 @@
+import { usePlants } from "./field.js";
+
+const plantArray = usePlants()
+
 export const havestPlants = (seed) => {
-  const plantArray = []
 
   for (const seed of plantArray) {
       if (plant.type === "Corn") {

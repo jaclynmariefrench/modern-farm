@@ -14,7 +14,7 @@ Catalog(yearlyPlan)
 
 // WALKING THROUGH THE PROGRAM
 // Step 1
-// console.log(yearlyPlan)
+console.log(yearlyPlan)
 
 // Step 2
 // const asparagusSeed = createAsparagus()
