@@ -1,8 +1,7 @@
-import { addPlant, usePlants } from "./field.js";
+import { usePlants } from "./field.js";
 import { createPlan } from "./plan.js"
 import { harvestPlants } from "./harvester.js";
 import { plantSeeds } from "./tractor.js";
-import { createAsparagus } from "./seeds/asparagus.js";
 import { Catalog } from "./catalog.js";
 
 // STEP 1
