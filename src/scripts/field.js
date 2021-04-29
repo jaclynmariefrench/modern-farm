@@ -14,6 +14,5 @@ export const addPlant = (seed) => {
 };
 
 export const usePlants = () => {
-  const plantCopy = growingField.slice();
-  return plantCopy;
+  return growingField;
 };

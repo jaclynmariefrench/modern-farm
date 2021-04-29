@@ -1,6 +1,6 @@
 import { addPlant, usePlants } from "./field.js";
 import { createPlan } from "./plan.js"
-import { havestPlants } from "./harvester.js";
+import { harvestPlants } from "./harvester.js";
 import { plantSeeds } from "./tractor.js";
 import { createAsparagus } from "./seeds/asparagus.js";
 import { Catalog } from "./catalog.js";
@@ -19,13 +19,12 @@ console.log(plantsUse)
 
 
 // STEP 4
-const harvest = havestPlants(plantsUse)
+const harvest = harvestPlants(plantsUse)
 console.log(harvest)
 
 
 // STEP 5
 const catalogHTML = Catalog(harvest)
-console.log(catalogHTML)
 
 
 // STEP 6
