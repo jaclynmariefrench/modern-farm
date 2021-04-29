@@ -3,13 +3,15 @@ const havestArray = [];
 export const havestPlants = (plantPlanted) => {
   for (const plant of plantPlanted) {
     if (plant.type === "Corn") {
-      for (const corn of plantPlanted) {
-        const cornPlant = corn.output / 2;
-        havestArray.push(cornPlant);
+      const cornPlant = plant.output/2;
+      for (let i = 0; i < cornPlant; i++) {
+        havestArray.push(plant);
       }
     } else {
       const plants = plant.output;
-      havestArray.push(plants);
+      for (let i = 0; i <plants; i++) {
+        havestArray.push(plant);
+      }
     }
   }
   return plantPlanted;

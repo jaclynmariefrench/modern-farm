@@ -10,35 +10,34 @@ const yearlyPlan = createPlan()
 console.log(yearlyPlan)
 
 // STEP 2
-const what = plantSeeds(yearlyPlan);
-console.log(what)
+plantSeeds(yearlyPlan);
 
 
 // STEP 3
-// const plantsUse = usePlants();
-// console.log(plantsUse)
+const plantsUse = usePlants();
+console.log(plantsUse)
 
 
 // STEP 4
-// const harvest = havestPlants(plantsUse)
-// console.log(harvest)
+const harvest = havestPlants(plantsUse)
+console.log(harvest)
 
 
 // STEP 5
-// const catalogHTML = Catalog(harvest)
-// console.log(catalogHTML)
+const catalogHTML = Catalog(harvest)
+console.log(catalogHTML)
 
 
 // STEP 6
-// const mainContainer = document.querySelector(".container");
+const mainContainer = document.querySelector(".container");
 
 
 // STEP 7
-// const applicationHTML = `${catalogHTML}`;
+const applicationHTML = `${catalogHTML}`;
 
 
 // STEP 8
-// mainContainer.innerHTML = applicationHTML;
+mainContainer.innerHTML = applicationHTML;
 
 
 
